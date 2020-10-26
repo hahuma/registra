@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img alt="Registra" src=https://github.com/yLukas077/Registra/blob/main/Registra.png width="100%">
+  <img alt="Registra" src=https://github.com/hahuma/Registra/blob/main/Registra.png width="100%">
 </p>
 ## 🚀 Tecnologias
 
