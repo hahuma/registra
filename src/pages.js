@@ -45,24 +45,20 @@ module.exports = {
 		return res.render('update-busca')
 	},
 
-
-
-
-
-
 	async busca (req, res) {
 		const fields = req.body
-
-		console.log(fields)
-
 
         try {
       
 			const db = await Database
 			
-			const paciente = await db.all(`SELECT * FROM cadastro_pacientes WHERE documento = "${fields.document}"`)
+			const results = await db.all(`SELECT * FROM cadastro_pacientes WHERE documento = "${fields.document}"`)
 			
+			const paciente = results[0]
+		  
 			if (paciente != "") {
+				console.log(paciente)
+				
 			return res.render('update-atualizacao', { paciente })}
 
 			else {
@@ -74,26 +70,6 @@ module.exports = {
             return res.send('Erro no banco de dados')
         }
 	},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	async listaHospitais (req, res) {
 
@@ -163,22 +139,9 @@ module.exports = {
         }
     },
 
-	async updateAtualizacao (req, res) {
-
-        const id = req.query.id
-
-        try {
-            const db = await Database;
-			const results = await db.all(`SELECT * FROM cadastro_pacientes WHERE id = "${id}"`)
-			const paciente = results[0]
-		  
-			return res.render('update-atualizacao', { paciente })
-			
-        } catch (error) {
-            console.log(error)
-            return res.send('Erro no banco de dados')
-        }
-    },
+	updateAtualizacao (req, res) {
+		return res.render('update-atualizacao')
+	},
 
 	async atualizaPaciente (req, res) {
 		const fields = req.body
