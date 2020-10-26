@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Registra</title>
+    <link rel="icon" href="/images/logo-icon.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+  </head>
+
+  <body id="body">
+    <div id="page">
+      <div id="container">
+        <aside class="login_aside">
+            <img class="animate-up" id="logo" src="images/logo.png" alt="Logomarca Desiderata" />
+            <div class="animate-up">
+                <h1 class="h-1">Dados</h1> 
+                <h1 class="h-2">salvam</h1> 
+                <h1 class="h-3">vidas</h1>
+            </div>
+        </aside>
+        <main class="login_main">
+          <form action="/login-profissional" method="POST">
+              <h1>Fazer login</h1>
+              <label for="email">E-mail</label>
+              <input type="text" id="email" name="email">
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" name="senha">
+              <a class="cadastro" href="/cadastro-profissional-saude">Fazer cadastro</a>
+              <button type="submit" class="primary-button">Entrar</button>
+            </form>
+        </main>
+
+        <a href="/" class="voltar animate-up">
+					 <img class="animate-up" src="images/voltar.png" alt="Voltar" />
+				</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+.primary-button {
+    margin-top: 6.4rem;
+    width: 330px;
+    height: 5.5rem;
+
+    font-size: 20px;
+    letter-spacing: 0.05em;
+
+    cursor: pointer;
+    background: #EB9244;
+    border-radius: 20px;
+    color: white;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.primary-button:focus, .secondary-button:focus, .special-button:focus {
+    border: 1px solid black;
+}
+
+.primary-button:hover {
+    opacity: 90%;
+}
+
+.secondary-button:hover, .special-button:hover {
+    opacity: 80%;
+}
+
+.secondary-button, .special-button {
+    margin-top: 6.4rem;
+    width: 70px;
+    height: 5.5rem;
+
+    font-size: 20px;
+    letter-spacing: 0.05em;
+
+    cursor: pointer;
+    background: #eaa76b;
+    border-radius: 20px;
+    color: white;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.special-button {
+    background-color: #FF7A04;
+}

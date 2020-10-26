@@ -1,0 +1,52 @@
+#container {
+	margin: auto;
+	width: max(80%, 1200px);
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+	background: url("../images/children.svg") no-repeat;
+	background-position: 85% 20%;
+	background-size: 30%;
+}
+
+main {
+	width: 1200px;
+}
+
+h1 {
+	animation-delay: 150ms;
+	font-size: 55px;
+	line-height: 1.4;
+	margin-bottom: 20px;
+	margin-left: 50px;
+}
+
+.h-2 {
+	margin-left: 130px;
+}
+
+.h-3 {
+	margin-left: 250px;
+}
+
+.visit {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+a {
+	margin: 40px;
+}
+
+main > a {
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+

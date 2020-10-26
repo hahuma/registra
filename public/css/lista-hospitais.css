@@ -1,0 +1,71 @@
+#container {
+    height: 100%;
+}
+
+main {
+    background-color: white;
+    color: black;
+    width: 100% - 300px;
+    margin-left: 300px;
+    height: auto;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    padding-left: 50px;
+}
+
+aside p {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70%;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+h1 {
+	animation-delay: 150ms;
+	font-size: 50px;
+	color: #EB9244;
+	text-align: center;
+    margin: 40px 0;
+    text-align: left;
+}
+
+.lista_hospitais {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.container_hospital {
+    display: flex;
+    margin-bottom: 20px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.container_ranking {
+    background-color: #EB9244;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.hospital {
+    font-size: 20px;
+    color: gray;
+    padding: 10px;
+}
+
+.ranking {
+    font-size: 25px;
+    color: white;
+}

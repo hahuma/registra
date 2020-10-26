@@ -1,0 +1,49 @@
+#container {
+	margin: 0 auto;
+	width: 90%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+
+
+	justify-content: space-between;
+}
+
+.cadastro_prof_main {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cadastro_prof_main h1 {
+	margin-top: 40px;
+	font-size: 60px;
+	line-height: 88px;
+	letter-spacing: 0.01em;
+
+	color: #EB9244;
+}
+
+.cadastro_prof_main p {
+	font-size: 40px;
+	line-height: 100px;
+	line-break: 100px;
+	/* or 250% */
+
+	color: #FFFFFF;
+	width: 80%;
+}
+
+.cadastro_prof_main p span {
+	color: #EB9244;
+}
+
+.cadastro_prof_main .primary-button {
+	margin-bottom: 100px;
+}

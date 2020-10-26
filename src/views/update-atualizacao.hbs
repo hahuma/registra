@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atualização - Registra</title>
+    <link rel="icon" href="/images/logo-icon.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="/css/update-atualizacao.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/aside.css" />
+  </head>
+
+  <body id="body">
+    <div id="page">
+      <div id="container">
+        <aside>
+            <img class="animate-up" id="logo" src="images/logo.png" alt="Logomarca Desiderata" />
+            <footer>
+              <a href="/update-busca" class="voltar_2 animate-up">
+					      <img class="animate-up" src="images/voltar.png" alt="Voltar" />
+			    	  </a>
+              <a href="/" class="fechar_2 animate-up">
+					      <img class="animate-up" src="images/fechar.png" alt="Fechar" />
+			    	  </a>
+            </footer>
+        </aside>
+
+        <main>
+          <h1>Atualização da situação do Paciente</h1>
+          <div class="atualizar_paciente_main">
+            <section>
+              
+              <h1><span>{{paciente.nome}}</span><span> - </span><span>{{paciente.documento}}</span></h1>
+              <div class="patient-info">
+                <p>Codigo de emissão para sorteio: <span>{{paciente.codigo_emissao_cupom}}</span></p>
+                <p>Sexo: <span>{{paciente.sexo}}</span></p>
+                <p>Idade: <span>{{paciente.idade}}</span></p>
+                <p>Unidade de origem: <span>{{paciente.unidade_origem}}</span></p>
+                <p>Data de chegada: <span>{{paciente.data_chegada}}</span></p>
+                <p>Tipo de câncer: <span>{{paciente.tipo_cancer}}</span></p>
+                <p>Estágio do câncer: <span>{{paciente.estagio_cancer}}</span></p>
+              </div>
+              <form action="atualiza-paciente" method="POST">
+                <input name="id" type="text" value="{{paciente.id}}" style="display: none"/>
+
+                <label for="treatment-finish-date">Data de finalização do tratamento</label>
+                <input id="treatment-finish-date" name="treatmentFinishDate" type="date" required/>
+
+                <label for="result">Resultado</label>
+                <select name="result" id="result" required>
+                  <option value="">Informe o resultado</option>
+                  <option value="Remissão">Remissão</option>
+                  <option value="Óbito">Óbito</option>
+                  <option value="Em tratamento">Em tratamento</option>
+                  <option value="Não comparece mais ao tratamento">Não comparece mais ao tratamento</option>
+                </select>
+                <label for="aditional-info">Informações Adicionais</label>
+                <textarea name="adicionaInfo" id="adicional-info" cols="30" rows="10"></textarea>
+                <button type="submit" class="primary-button">Atualizar</button>
+              </form>
+            </section>
+          </div>  
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

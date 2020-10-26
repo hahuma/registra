@@ -1,0 +1,52 @@
+/* !important*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root /*define o valor para o rem se alterar no futuro... */
+{
+    font-size: 10px;
+}
+
+body
+{
+    height: 100vh;
+    color: white;
+    background: #0089CE;
+}
+body, input, button, textarea
+{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#page {
+	background: #0089CE;
+	height: 100%;
+	position: relative;  
+}
+
+#logo {
+	animation-delay: 50ms;
+	width: 150px;
+	
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.voltar {
+  width: 50px;
+	
+	position: absolute;
+	top: 30px;
+	right: 30px;
+
+}
+
+
+
+
+
+

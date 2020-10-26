@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atualização - Registra </title>
+    <link rel="icon" href="/images/logo-icon.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="/css/update-busca.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/aside.css" />
+  </head>
+
+  <body id="body">
+    <div id="page">
+      <div id="container">
+        <aside>
+            <img class="animate-up" id="logo" src="images/logo.png" alt="Logomarca Desiderata" />
+            <footer>
+              <a href="/cadastro-ou-update" class="voltar_2 animate-up">
+					      <img class="animate-up" src="images/voltar.png" alt="Voltar" />
+			    	  </a>
+              <a href="/" class="fechar_2 animate-up">
+					      <img class="animate-up" src="images/fechar.png" alt="Fechar" />
+			    	  </a>
+            </footer>
+        </aside>
+
+        <main>
+          <h1>Atualização da situação do Paciente</h1>
+            <div class="buscar_paciente_main">
+              <form action="busca" method="POST">
+                  <h1>Busca de paciente</h1>
+                  <label for="document">Documento</label>
+                  <input type="number" min="100000000" max="999999999" step="1" name="document" required id="document">
+                  <a href="/update-atualizacao?id=29" title="Busca" class="primary-button">Buscar</a>>
+                </form>
+            </div>  
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

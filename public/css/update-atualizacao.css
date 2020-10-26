@@ -1,0 +1,101 @@
+#container {
+    height: 100%;
+}
+
+main {
+    background-color: #CEDEE5;
+    color: black;
+    width: 100% - 300px;
+    margin-left: 300px;
+    height: auto;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    padding: 50px 0;
+    animation-delay: 150ms;
+	font-size: 35px;
+	color: #EB9244;
+}
+
+.atualizar_paciente_main {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 60px;
+
+    background-color: white;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    width: 700px;
+}
+
+.atualizar_paciente_main section h1{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 34px;
+    color: #65808d;
+    padding: 0 0 10px 0;
+}
+
+.atualizar_paciente_main section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.patient-info p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #8FA7B3;
+}
+
+.atualizar_paciente_main section form label {
+    font-size: 20px;
+    margin-top: 40px;
+    color: #8FA7B3;
+}
+
+.atualizar_paciente_main section form input {
+    margin-top: 15px;
+    font-size: 20px;
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    border-radius: 15px;
+    line-height: 50px;
+    color: gray;
+    padding-left: 15px;
+}
+
+.atualizar_paciente_main section form select {
+    font-family: 'Fjalla One', sans-serif;
+
+    background: #F5F8FA;
+    margin-top: 15px;
+    height: 60px;
+    border: 1px solid #D3E2E5;
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 10px;
+    color: gray;
+}
+
+.atualizar_paciente_main section form textarea {
+    margin-top: 15px;
+    font-size: 20px;
+    resize: none;
+    padding: 15px;
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    border-radius: 15px;
+    color: gray;
+}
+
+.atualizar_paciente_main section form button {
+    width: 100%;
+}
+

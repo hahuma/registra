@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Registra</title>
+    <link rel="icon" href="/images/logo-icon.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="/css/cadastro-paciente.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/aside.css" />
+  </head>
+
+  <body id="body">
+    <div id="page">
+      <div id="container">
+        <aside>
+            <img class="animate-up" id="logo" src="images/logo.png" alt="Logomarca Desiderata" />
+            <footer>
+              <a href="/cadastro-ou-update" class="voltar_2 animate-up">
+					      <img class="animate-up" src="images/voltar.png" alt="Voltar" />
+			    	  </a>
+              <a href="/" class="fechar_2 animate-up">
+					      <img class="animate-up" src="images/fechar.png" alt="Fechar" />
+			    	  </a>
+            </footer>
+        </aside>
+
+        <main>
+          <h1>Cadastro do paciente</h1>
+          <div class="cadastrar_paciente_main">
+            <section>
+              <h1>Dados</h1>
+              <form action="salva-paciente" method="post">
+
+                <label for="name">Nome</label>
+                <input id="name" type="text" name="name" required/>
+
+                <label for="document">Documento</label>
+                <input id="document" type="number" min="100000000" max="999999999" step="1" name="document" required/>
+
+                <label for="result">Sexo</label>
+                <select name="gender" id="gender" required>
+                  <option value="">Escolha uma alternativa</option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Feminino">Feminino</option>
+                </select>
+
+                <label for="arrival-date">Data de chegada</label>
+                <input id="arrival-date" type="date" name="arrivalDate" required/>
+
+                <label for="result">Idade</label>
+                <select name="age" id="age" required>
+                  <option value="">Escolha uma alternativa</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                </select>
+
+                <label for="result">Unidade de origem</label>
+                <select name="origem" id="origem" required>
+                  <option value="">Escolha uma alternativa</option>
+                  <option value="Atenção Primária">Atenção Primária</option>
+                  <option value="UPA ou Pronto Socorro">UPA ou Pronto Socorro</option>
+                  <option value="Hospital Geral e Especializado">Hospital Geral e Especializado</option>
+                </select>
+
+                <label for="result">Tipo de câncer</label>
+                <select name="cancerType" id="cancer-type" required>
+                  <option value="">Escolha uma alternativa</option>
+                  <option value="Leucemia LA">Leucemia LA</option>
+                  <option value="Tumores do SNC">Tumores do SNC</option>
+                  <option value="Linfoma Hodkin">Linfoma Hodkin</option>
+                  <option value="Linfoma Não Hodkin">Linfoma Não Hodkin</option>
+                  <option value="Neuroblastoma">Neuroblastoma</option>
+                  <option value="Tumor de Wilms">Tumor de Wilms</option>
+                  <option value="Rabdomiossarcoma">Rabdomiossarcoma</option>
+                  <option value="Osteossarcoma">Osteossarcoma</option>
+                  <option value="Leucemia MA">Leucemia MA</option>
+                  <option value="Retinoblastoma">Retinoblastoma</option>
+                </select>
+
+                <label for="result">Estadiamento do câncer na chega do tratamento</label>
+                <select name="cancerStage" id="cancer-stage" required>
+                  <option value="">Escolha uma alternativa</option>
+                  <option value="Localizado">Localizado</option>
+                  <option value="Metastático">Metastático</option>
+                  <option value="Localmente avançado">Localmente avançado</option>
+                  <option value="Regional">Regional</option>
+                  <option value="Limitado">Limitado</option>
+                </select>
+                <label for="aditional-info">Informações Adicionais</label>
+                <textarea name="adicionalInfo" id="adicional-info" cols="30" rows="10"></textarea>
+
+                <button type="submit" class="primary-button">Cadastrar</button>
+              </form>
+            </section>
+          </div>   
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+#container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.cupom_main {
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cupom_main img {
+    margin-top: 20px;
+}
+
+.cupom_main p {
+    font-size: 54px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.cupom_main a {
+    margin-bottom: 40px;
+}
